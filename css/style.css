@@ -27,8 +27,3 @@ h2 {
   background: #FFBC84;
   position: fixed;
 }
-table, th, td {
-  border: 2px solid black;
-  border-collapse: collapse;
-  border-spacing: inherit;
-}
