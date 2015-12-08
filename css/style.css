@@ -1,29 +1,29 @@
 h1 {
   color: #FF430E;
   text-align: center;
-  font-family: lobster,cursive;
+  font-family: lobster,cursive, georgia;
 }
 body {
   background-color: #2B9DB2;
 }
-#logo{
-  align-items: center;
+/*#logo{
+  align-items: center;*/
 }
 p{
+  color: #010074;
   font-family: cabin, sans-serif;
-  color: FFBC84;
-  line-height: 1.4em
+  line-height: 1.4em;
 }
 nav{
   font-family: cabin, sans-serif;
-  color: FFBC84;
+  color: #FFBC84;
 }
 h2 {
   color: #71E9FF;
   text-transform: uppercase;
 }
 
-#top, #bottom, #left, #right {
+/*#top, #bottom, #left, #right {
   background: #FFBC84;
   position: fixed;
-}
+}*/
