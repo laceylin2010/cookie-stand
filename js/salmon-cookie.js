@@ -1,5 +1,12 @@
-var hours= ['10am: ' ,'11am: ' ,'12am: ' ,'1:00pm: ' ,'2:00pm: ' ,'3:00pm: '   ,'4:00pm: ' ,'5:00pm: ' ];
-var hoursEl= document.getElementById('hours');
+
+
+var hours= ['10am: '
+,'11am: ' ,'12am: ' ,'1:00pm: ' ,'2:00pm: ' ,'3:00pm: '   ,'4:00pm: ' ,'5:00pm: ' ];
+var pikeEl= document.getElementById('hours');
+var seaAirportEl= document.getElementById('hours1');
+var southcenterEl= document.getElementById('hours2');
+var bellevueMallEl= document.getElementById('hours3');
+var alkiBeachEl= document.getElementById('hours4');
 
 var pikePlace = {
   min: 17,
@@ -8,21 +15,22 @@ var pikePlace = {
   hourlyCookies: [],
 
   customers: function(){
-    return Math.floor(Math.random() * (this.max - this.min) + this.min);
+    return Math.floor(Math.random() * (this.max - this.min)) + this.min;
   },
   cookie: function(){
-    return this.customers() * this.avg;
+    return Math.floor(this.customers() * (this.avg));
   },
   calcHourlyTotals: function(){
     var ulEl= document.createElement('ul');
     for(var i =0; i<hours.length; i++) {
         this.hourlyCookies.push(this.cookie());
-        var liEl= document.createTextNode('li');
+        var liEl=document.createElement('li');
         liEl.textContent= ' '+ hours[i] +' '+ this.hourlyCookies[i];
         ulEl.appendChild(liEl);
       }
-        hoursEl.appendChild(ulEl);
+        pikeEl.appendChild(ulEl);
     }
+
 };
 console.log(pikePlace.customers());
 console.log(pikePlace.cookie());
@@ -35,20 +43,20 @@ var airport={
   hourlyCookies: [],
 
   customers: function(){
-    return Math.floor(Math.random()* (this.max - this.min) + this.min);
+    return Math.floor(Math.random()* (this.max - this.min)) + this.min;
   },
   cookie:function(){
-    return this.customers()*this.avg;
+    return Math.floor(this.customers()*this.avg);
   },
   calcHourlyTotals: function(){
     var ulEl= document.createElement('ul');
     for(var i=0; i<hours.length; i++){
       this.hourlyCookies.push(this.cookie());
-      var liEl= document.createTextNode('li');
+      var liEl= document.createElement('li');
       liEl.textContent= ' '+ hours[i] +' '+ this.hourlyCookies[i];
       ulEl.appendChild(liEl);
     }
-    hoursEl.appendChild(ulEl);
+    seaAirportEl.appendChild(ulEl);
   }
 };
 console.log(airport.customers());
@@ -65,21 +73,21 @@ var mall= {
     return Math.floor(Math.random()*(this.max - this.min) + this.min);
   },
   cookie: function(){
-    return this.customers()*this.avg;
+    return Math.floor(this.customers()*this.avg);
   },
   calcHourlyTotals: function(){
     var ulEl= document.createElement('ul');
     for(var i=0; i<hours.length; i++){
       this.hourlyCookies.push(this.cookie());
-      var liEl= document.createTextNode('li');
+      var liEl= document.createElement('li');
       liEl.textContent= ' '+ hours[i] +' '+ this.hourlyCookies[i];
       ulEl.appendChild(liEl);
     }
-      hoursEl.appendChild(ulEl);
+      southcenterEl.appendChild(ulEl);
   }
 };
 console.log(mall.customers());
-console.log(airport.cookie());
+console.log(mall.cookie());
 mall.calcHourlyTotals();
 
 var bellevue={
@@ -92,17 +100,17 @@ var bellevue={
     return Math.floor(Math.random()*(this.max-this.min)+ this.min);
   },
   cookie: function(){
-    return this.customers()*this.avg;
+    return Math.floor(this.customers()*this.avg);
   },
   calcHourlyTotals:function(){
     var ulEl=document.createElement('ul');
     for(var i=0; i<hours.length; i++){
       this.hourlyCookies.push(this.cookie());
-      var liEl= document.createTextNode('li');
+      var liEl= document.createElement('li')
       liEl.textContent= ' '+ hours[i]+ ' '+ this.hourlyCookies[i];
       ulEl.appendChild(liEl);
     }
-    hoursEl.appendChild(ulEl);
+    bellevueMallEl.appendChild(ulEl);
   }
 };
 console.log(bellevue.customers());
@@ -119,19 +127,19 @@ var alki= {
     return Math.floor(Math.random()*(this.max-this.min)+ this.min);
   },
   cookie: function(){
-    return this.customers()*this.avg;
+    return Math.floor(this.customers()*this.avg);
   },
   calcHourlyTotals:function(){
     var ulEl=document.createElement('ul');
     for(var i=0; i<hours.length; i++){
       this.hourlyCookies.push(this.cookie());
-      var liEl= document.createTextNode('li');
+      var liEl= document.createElement('li');
       liEl.textContent= ' '+ hours[i]+ ' '+ this.hourlyCookies[i];
       ulEl.appendChild(liEl);
     }
-    hoursEl.appendChild(ulEl);
+    alkiBeachEl.appendChild(ulEl);
   }
 };
 console.log(bellevue.customers());
 console.log(bellevue.cookie());
-bellevue.calcHourlyTotals();
+alki.calcHourlyTotals();
