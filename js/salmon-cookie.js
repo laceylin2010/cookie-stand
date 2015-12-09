@@ -6,7 +6,6 @@ function CookieStand(place,min,max,avg){
   this.max = max;
   this.avg = avg;
   this.hourlyCookies = []
-  this.dailyCookies = 0;
   this.total = 0;
 };
 CookieStand.prototype.customers = function(){
@@ -24,7 +23,6 @@ CookieStand.prototype.render = function(){
   var tdEl = document.createElement('td');
   tdEl.textContent = this.place;
   trEl.appendChild(tdEl);
-
   var totalEl = document.createElement('td');
   totalEl.textContent = this.total;
   trEl.appendChild(totalEl);
@@ -79,7 +77,6 @@ alki.render();
 var userForm = document.getElementById('user-form');
 function newStats(event){
   event.preventDefault();
-  // console.log(event.target);
   var name = event.target.place.value;
   var min = event.target.min.value;
   var max = event.target.max.value;
