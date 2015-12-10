@@ -1,34 +1,54 @@
 h1 {
   color: #FF430E;
   text-align: center;
-  font-family: lobster,cursive;
+  font-family: lobster,cursive, georgia;
 }
 body {
   background-color: #2B9DB2;
 }
-#logo{
-  align-items: center;
+/*#logo{
+  align-items: center;*/
 }
 p{
+  color: #010074;
   font-family: cabin, sans-serif;
-  color: FFBC84;
-  line-height: 1.4em
+  line-height: 1.4em;
 }
 nav{
   font-family: cabin, sans-serif;
-  color: FFBC84;
+  color: #FFBC84;
 }
 h2 {
   color: #71E9FF;
   text-transform: uppercase;
 }
-
-#top, #bottom, #left, #right {
-  background: #FFBC84;
-  position: fixed;
+ul {
+  list-style-type: disc;
+  width: 300px;
 }
-table, th, td {
-  border: 2px solid black;
-  border-collapse: collapse;
-  border-spacing: inherit;
+.hoursEl{
+  list-style-type: disc;
+
+}
+.figcaption{
+  position: right;
+}
+
+tb {
+   border: 1px solid black;
+
+}
+
+tr {
+  border: 1px solid black;
+}
+
+td, th {
+  border-right: 1px solid black;
+
+}
+
+th {
+  text-align: left;
+  font-style: bold;
 }
