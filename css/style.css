@@ -1,14 +1,46 @@
+body {
+  background-color: #2B9DB2;
+  display: block;
+  margin: 0;
+}
+.firstimage{
+  background-color: #B02A04;
+  height: 40%;
+  display: inline-block;
+  padding-right: 207px;
+}
+section{
+  background-color: #BAE8E6;
+}
+
+.secondimage{
+  background-color: #BAE8E6;
+  padding-top:16px;
+  padding-bottom: 9px;
+  float: right;
+  margin-right: 100px;
+
+}
+img {
+  height: 200px;
+  width:auto;
+  float:left;
+
+}
+h4 {
+  color: white;
+  font-family: lobster, cursive, georgia;
+  font-size: .9em;
+  letter-spacing: .30em;
+}
+
 h1 {
   color: #FF430E;
   text-align: center;
   font-family: lobster,cursive, georgia;
 }
-body {
-  background-color: #2B9DB2;
-}
-/*#logo{
-  align-items: center;*/
-}
+
+
 p{
   color: #010074;
   font-family: cabin, sans-serif;
@@ -16,39 +48,54 @@ p{
 }
 nav{
   font-family: cabin, sans-serif;
-  color: #FFBC84;
+  color: #white;
+  background-color: #FCF670;
+  display: inline;
+}
+
+ul {
+  width: auto;
+  list-style-type:none;
+  margin: 0px;
+  margin-left: 0px;
+  background-color: #E8DDBA;
+  padding-top: 3px;
+
 }
 h2 {
   color: #71E9FF;
   text-transform: uppercase;
 }
-ul {
-  list-style-type: disc;
-  width: 300px;
+li {
+  margin: 0 120px;
+  display: inline;
 }
+
+/*Sales html page*/
+
 .hoursEl{
   list-style-type: disc;
 
 }
-.figcaption{
-  position: right;
+table{
+  color: orange;
+  font-family: cabin, sans-serif;
+  /*font-size-adjust: auto;*/
+  /*text-align: center;*/
+  /*display: inline;*/
 }
-
-tb {
-   border: 1px solid black;
-
+th{
+  color:white;
+  line-height: 2em;
+  font-family: cabin, sans-serif;
+  text-align: center;
+  font-size: 1.6em;
 }
-
-tr {
-  border: 1px solid black;
+td{
+  padding-left: 1.5em;
+  line-height: 1.3em;
+  text-align: center;
 }
-
-td, th {
-  border-right: 1px solid black;
-
-}
-
-th {
-  text-align: left;
-  font-style: bold;
+.familypic{
+  height: 77px;
 }
