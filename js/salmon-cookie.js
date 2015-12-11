@@ -78,9 +78,9 @@ var userForm = document.getElementById('user-form');
 function newStats(event){
   event.preventDefault();
   var name = event.target.place.value;
-  var min = event.target.min.value;
-  var max = event.target.max.value;
-  var avg = event.target.avg.value;
+  var min = parseInt(event.target.min.value);
+  var max = parseInt(event.target.max.value);
+  var avg = parseFloat(event.target.avg.value);
   var newStore = new CookieStand (name,min,max,avg);
 
   newStore.render();
