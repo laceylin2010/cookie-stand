@@ -26,8 +26,20 @@ img {
   height: 200px;
   width:auto;
   margin-left: 10px;
-
 }
+.wrapper {
+  color: #010074;
+  font-family: cabin, sans-serif;
+  line-height: 1.4em;
+  margin-left: 34px;
+  border: 10px solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 438px;
+}
+
 h4 {
   color: white;
   font-family: lobster, cursive, georgia;
@@ -39,6 +51,7 @@ h2 {
   text-transform: uppercase;
   margin-left: 34px;
   margin-top: 0px;
+  padding-top:15px;
 }
 p{
   color: #010074;
@@ -60,6 +73,7 @@ p{
 .column1{
   width: 500px;
   float: left;
+
 }
 
 
@@ -72,13 +86,31 @@ p{
   padding-top: 3px;
 
 }
-li {
+.options {
   margin: 0 120px;
   display: inline;
 }
+
 .locations {
-  padding-left: 80px;
+  padding-left: 0px;
+  display:inline-block;
+  float: left;
+  clear: left;
 }
 .time {
-  padding-left: 216px;
+  padding-left: 15px;
+  list-style-type: none;
+  display: inline-block;
+  float: right;
+  clear:right;
+}
+
+.merchandise {
+  float: right;
+  clear: right;
+  width: 300px;
+}
+ul {
+  display: inline-block;
+
 }
