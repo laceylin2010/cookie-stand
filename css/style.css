@@ -1,3 +1,4 @@
+
 body {
   background-color: #2B9DB2;
   display: block;
@@ -7,9 +8,10 @@ body {
   background-color: #B02A04;
   height: 40%;
   display: inline-block;
-  padding-right: 207px;
+  padding-right: 225px;
 }
-section{
+
+.images{
   background-color: #BAE8E6;
 }
 
@@ -24,36 +26,79 @@ section{
 img {
   height: 200px;
   width:auto;
-  float:left;
-
+  margin-left: 10px;
 }
+.wrapper {
+  color: #010074;
+  font-family: cabin, sans-serif;
+  line-height: 1.4em;
+  margin-left: 34px;
+  border: 10px solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 438px;
+}
+.column1{
+  width: 500px;
+}
+
 h4 {
   color: white;
   font-family: lobster, cursive, georgia;
   font-size: .9em;
   letter-spacing: .30em;
 }
-
-h1 {
-  color: #FF430E;
-  text-align: center;
-  font-family: lobster,cursive, georgia;
+h2 {
+  color: #71E9FF;
+  text-transform: uppercase;
+  margin-left: 34px;
+  margin-top: 0px;
+  padding-top:15px;
+   -webkit-transition-property: background;
+      -moz-transition-property: background;
+        -o-transition-property: background;
+           transition-property: background;
+   -webkit-transition-duration: 1s;
+      -moz-transition-duration: 1s;
+        -o-transition-duration: 1s;
+           transition-duration: 1s;
+   -webkit-transition-timing-function: linear;
+      -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+           transition-timing-function: linear;
 }
+h2:hover {
+ background: white;
+}
+
 
 
 p{
   color: #010074;
   font-family: cabin, sans-serif;
   line-height: 1.4em;
+  margin-left: 34px;
+  border: 10px solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-nav{
-  font-family: cabin, sans-serif;
-  color: #white;
-  background-color: #FCF670;
-  display: inline;
+.column2 {
+  margin-top: 68px;
+  margin-right: 34px;
+  position: absolute;
+  display: inline-block;
+  top: 274px;
+  margin-left: 500px
 }
 
-ul {
+
+
+
+.navlist {
   width: auto;
   list-style-type:none;
   margin: 0px;
@@ -62,40 +107,43 @@ ul {
   padding-top: 3px;
 
 }
-h2 {
-  color: #71E9FF;
-  text-transform: uppercase;
-}
-li {
+.options {
   margin: 0 120px;
   display: inline;
 }
 
-/*Sales html page*/
+.locations {
+  padding-left: 0px;
+  display:inline-block;
+  float: left;
+  clear: left;
+}
+.time {
+  padding-left: 15px;
+  list-style-type: none;
+  display: inline-block;
+  float: right;
+  clear:right;
+}
 
-.hoursEl{
-  list-style-type: disc;
+.events {
+  color: #010074;
+  font-family: cabin, sans-serif;
+  line-height: 1.4em;
+  margin-left: 34px;
+  border: 10px solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 438px;
+}
+.merchandise {
+  float: left;
+  clear: left;
+  width: 287px;
+}
+ul {
+  display: inline-block;
 
-}
-table{
-  color: orange;
-  font-family: cabin, sans-serif;
-  /*font-size-adjust: auto;*/
-  /*text-align: center;*/
-  /*display: inline;*/
-}
-th{
-  color:white;
-  line-height: 2em;
-  font-family: cabin, sans-serif;
-  text-align: center;
-  font-size: 1.6em;
-}
-td{
-  padding-left: 1.5em;
-  line-height: 1.3em;
-  text-align: center;
-}
-.familypic{
-  height: 77px;
 }

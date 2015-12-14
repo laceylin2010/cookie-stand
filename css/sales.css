@@ -1,0 +1,60 @@
+
+body {
+  background-color: #2B9DB2;
+  display: block;
+  margin: 0;
+}
+.firstimage{
+  background-color: #B02A04;
+  height: 40%;
+  display: inline-block;
+  padding-right: 225px;
+}
+.images{
+  background-color: #BAE8E6;
+}
+
+.secondimage{
+  background-color: #BAE8E6;
+  padding-top:16px;
+  padding-bottom: 9px;
+  float: right;
+  margin-right: 100px;
+
+}
+img {
+  height: 200px;
+  width:auto;
+  margin-left: 10px;
+
+}
+li {
+  margin: 0 120px;
+  display: inline;
+}
+.hoursEl{
+  list-style-type: disc;
+
+}
+table{
+  color: orange;
+  font-family: cabin, sans-serif;
+  /*font-size-adjust: auto;*/
+  /*text-align: center;*/
+  /*display: inline;*/
+}
+th{
+  color:white;
+  line-height: 2em;
+  font-family: cabin, sans-serif;
+  text-align: center;
+  font-size: 1.6em;
+}
+td{
+  padding-left: 1.5em;
+  line-height: 1.3em;
+  text-align: center;
+}
+.familypic{
+  height: 77px;
+}
