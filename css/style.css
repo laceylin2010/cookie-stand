@@ -56,7 +56,6 @@ h2 {
   margin-left: 34px;
   margin-top: 0px;
   padding-top:15px;
-  background: #2db34a;
    -webkit-transition-property: background;
       -moz-transition-property: background;
         -o-transition-property: background;
@@ -88,7 +87,7 @@ p{
   padding-right: 5px;
 }
 .column2 {
-  margin-top: 40px;
+  margin-top: 68px;
   margin-right: 34px;
   position: absolute;
   display: inline-block;
