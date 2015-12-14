@@ -10,6 +10,7 @@ body {
   display: inline-block;
   padding-right: 225px;
 }
+
 .images{
   background-color: #BAE8E6;
 }
@@ -39,6 +40,9 @@ img {
   padding-right: 5px;
   width: 438px;
 }
+.column1{
+  width: 500px;
+}
 
 h4 {
   color: white;
@@ -52,7 +56,26 @@ h2 {
   margin-left: 34px;
   margin-top: 0px;
   padding-top:15px;
+  background: #2db34a;
+   -webkit-transition-property: background;
+      -moz-transition-property: background;
+        -o-transition-property: background;
+           transition-property: background;
+   -webkit-transition-duration: 1s;
+      -moz-transition-duration: 1s;
+        -o-transition-duration: 1s;
+           transition-duration: 1s;
+   -webkit-transition-timing-function: linear;
+      -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+           transition-timing-function: linear;
 }
+h2:hover {
+ background: white;
+}
+
+
+
 p{
   color: #010074;
   font-family: cabin, sans-serif;
@@ -64,17 +87,16 @@ p{
   padding-left: 5px;
   padding-right: 5px;
 }
-
 .column2 {
-  margin-left: 540px;
-  margin-top: 13px;
+  margin-top: 40px;
   margin-right: 34px;
+  position: absolute;
+  display: inline-block;
+  top: 274px;
+  margin-left: 500px
 }
-.column1{
-  width: 500px;
-  float: left;
 
-}
+
 
 
 .navlist {
@@ -105,10 +127,22 @@ p{
   clear:right;
 }
 
+.events {
+  color: #010074;
+  font-family: cabin, sans-serif;
+  line-height: 1.4em;
+  margin-left: 34px;
+  border: 10px solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 438px;
+}
 .merchandise {
-  float: right;
-  clear: right;
-  width: 300px;
+  float: left;
+  clear: left;
+  width: 287px;
 }
 ul {
   display: inline-block;
